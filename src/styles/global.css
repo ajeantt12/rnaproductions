@@ -6,6 +6,7 @@
 
   /* Scale all hero internals together: 1 = current size */
   --hero-scale: 1.2;
+  --wa-dark-green: #103928;
 }
 
 .site-shell {
@@ -91,18 +92,34 @@
 }
 
 .hero-cta {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: calc(0.25rem * var(--hero-scale));
   margin-top: calc(1rem * var(--hero-scale));
   border-radius: 9999px;
-  background: #25d366;
-  color: #ffffff;
-  font-size: calc(0.875rem * var(--hero-scale));
+  border: 2px solid var(--wa-dark-green);
+  background: #ffffff;
+  color: var(--wa-dark-green);
+  font-size: calc(0.82rem * var(--hero-scale));
   font-weight: 600;
   line-height: 1;
   text-decoration: none;
-  padding: calc(0.7rem * var(--hero-scale)) calc(1rem * var(--hero-scale));
+  padding: calc(0.55rem * var(--hero-scale)) calc(0.85rem * var(--hero-scale));
 }
 
 .hero-cta:hover {
-  background: #1ebe5d;
+  background: rgba(16, 57, 40, 0.08);
+}
+
+.hero-cta-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(0.3rem * var(--hero-scale));
+}
+
+.hero-cta-inline-logo {
+  padding-left: calc(0.1rem * var(--hero-scale));
+  width: calc(4.5rem * var(--hero-scale));
+  height: auto;
+  display: inline-block;
 }
