@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const contactEmail = 'business@rnaproductions.in';
+const whatsappNumber = '917048932354';
+const whatsappText = encodeURIComponent(
+	"Hi RNA Productions, I'm interested in your services."
+);
+const whatsappHref = `https://wa.me/${whatsappNumber}?text=${whatsappText}`;
+---
+
+<BaseLayout title="Contact | RNA Productions">
+	<section class="hero-page flex flex-col items-start">
+		<img
+			src="/logo-transparent.png"
+			alt="RNA Productions logo"
+			width="2609"
+			height="2382"
+			class="hero-logo"
+		/>
+
+		<nav class="hero-nav flex">
+			<a class="nav-link" href="/">About</a>
+			<a
+				class="nav-link nav-link-active"
+				href="/contact"
+				aria-current="page"
+				>Contact</a
+			>
+		</nav>
+
+		<div class="hero-content">
+			<h1 class="hero-title font-semibold">RNA Productions &bull; Greater Noida</h1>
+			<p class="hero-body text-[#2b2b2b]">
+				For any enquiries, email us at
+				<a class="text-[#3a6fb6] underline underline-offset-4" href={`mailto:${contactEmail}`}
+					>{contactEmail}</a
+				>. We will get back to you as soon as possible.
+			</p>
+			<a class="hero-cta" href={whatsappHref} target="_blank" rel="noopener noreferrer"
+				>Message us on WhatsApp</a
+			>
+		</div>
+	</section>
+</BaseLayout>

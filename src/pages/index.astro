@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="RNA Productions">
+	<section class="hero-page flex flex-col items-start">
+		<img
+			src="/logo-transparent.png"
+			alt="RNA Productions logo"
+			width="2609"
+			height="2382"
+			class="hero-logo"
+		/>
+
+		<nav class="hero-nav flex">
+			<a class="nav-link nav-link-active" href="/" aria-current="page"
+				>About</a
+			>
+			<a class="nav-link" href="/contact">Contact</a>
+		</nav>
+
+		<div class="hero-content">
+			<h1 class="hero-title font-semibold">RNA Productions &bull; Greater Noida</h1>
+			<p class="hero-body text-[#2b2b2b]">
+				We're a locally-founded production and digital agency offering end-to-end 
+				solutions: <b>video production</b>, <b>eCourse content creation</b>, 
+				<b>event management</b>, and <b>web development</b> services.
+			</p>
+		</div>
+	</section>
+</BaseLayout>

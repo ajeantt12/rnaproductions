@@ -1,0 +1,28 @@
+---
+import '../styles/global.css';
+import { ViewTransitions } from 'astro:transitions';
+
+const { title = 'RNA Productions' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body class="min-h-screen bg-white font-sans text-[#1f1f1f] antialiased">
+    <main class="min-h-screen" transition:animate="fade">
+      <div class="site-shell mx-auto w-full max-w-[620px] pb-20 pt-20 sm:pt-32">
+        <slot />
+
+        <p class="hero-footer text-[#7a7a7a]">
+          &copy; 2026 by RNA Productions. Built on Astro.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
