@@ -43,6 +43,7 @@ Core files:
 Static assets:
 - `public/logo-transparent.png`
 - `public/favicon.png`
+- `public/socials/WA_Digital_Inline_Dark_Green.png`
 
 ---
 
@@ -141,6 +142,7 @@ interface HeroContent {
 interface StyleTokens {
   "--page-padding-x": string; // currently 2rem
   "--hero-scale": string;     // currently 1.2
+  "--wa-dark-green": string;  // currently #103928
 }
 ```
 
@@ -180,6 +182,10 @@ interface StyleTokens {
 - Email link opens default mail client via `mailto:business@rnaproductions.in`.
 - WhatsApp button opens new tab with prefilled message:
   - `https://wa.me/917048932354?text=<encoded message>`
+- CTA visual contract:
+  - white fill
+  - dark green border/text (`#103928`)
+  - inline WhatsApp line logo asset inside button
 - Uses shared footer from layout.
 
 ---
@@ -197,6 +203,7 @@ Interaction details:
 - Nav links animate underline on hover (`::after` with `scaleX` transition).
 - Active nav keeps underline visible.
 - WhatsApp CTA has hover color change.
+- WhatsApp CTA includes inline brand logo (`WA_Digital_Inline_Dark_Green.png`).
 - Page transitions fade between route changes.
 
 ---
@@ -303,4 +310,3 @@ deploy:
   workflow: .github/workflows/deploy.yml
   custom_domain: rnaproductions.in
 ```
-

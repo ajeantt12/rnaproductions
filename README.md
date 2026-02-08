@@ -5,7 +5,7 @@ Official website source for RNA Productions.
 ## Website Overview
 
 - Main page: company introduction and service summary
-- Contact page: email link and WhatsApp CTA
+- Contact page: email link and WhatsApp CTA with inline brand logo
 - Shared layout and footer across all pages
 - Mobile-friendly hero layout and transitions between pages
 
@@ -13,12 +13,14 @@ Official website source for RNA Productions.
 
 - Logo: `public/logo-transparent.png`
 - Favicon: `public/favicon.png`
+- WhatsApp inline logo: `public/socials/WA_Digital_Inline_Dark_Green.png`
 - Global styling: `src/styles/global.css`
 
 ## Contact Links
 
 - Email: `business@rnaproductions.in` (click-to-email)
 - WhatsApp CTA: opens prefilled message from the contact page
+  - White-fill button with dark green border and inline WhatsApp line logo
 
 ## Local Development
 
